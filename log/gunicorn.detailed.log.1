@@ -1,0 +1,56 @@
+[2023-12-10 17:47:59,192] INFO _log() L225   * Restarting with stat - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:48:00,882] WARNING _log() L225   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:48:00,882] INFO _log() L225   * Running on http://192.168.0.52:5000/ (Press CTRL+C to quit) - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:48:10,924] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:48:10] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:48:55,559] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:48:55] "GET /amostras?cod=a010 HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:48:56,301] ERROR log_exception() L1449 Exception on /amostra [POST] - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\wvpin\Desktop\Wanderson\PUC Eng Software\SprintIV_Qualidade_Seg_SistInteligentes\MVP\Entrega MVP\wanderson_mvplast\api\app.py", line 92, in predict
+    potabilidade_predita = Model.preditor(modelo, form)
+TypeError: preditor() missing 1 required positional argument: 'form'
+[2023-12-10 17:48:56,307] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:48:56] "[35m[1mPOST /amostra HTTP/1.1[0m" 500 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:49:01,433] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:49:01] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:22,135] INFO _log() L225   * Detected change in 'C:\\Users\\wvpin\\Desktop\\Wanderson\\PUC Eng Software\\SprintIV_Qualidade_Seg_SistInteligentes\\MVP\\Entrega MVP\\wanderson_mvplast\\api\\model\\modelo.py', reloading - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:22,336] INFO _log() L225   * Restarting with stat - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:24,447] WARNING _log() L225   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:24,455] INFO _log() L225   * Running on http://192.168.0.52:5000/ (Press CTRL+C to quit) - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:28,983] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:56:28] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:29,759] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:56:29] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:30,573] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:56:30] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:56:31,273] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:56:31] "GET /amostras HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:57:21,109] INFO _log() L225  127.0.0.1 - - [10/Dec/2023 17:57:21] "GET /amostras?cod=a012 HTTP/1.1" 200 - - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-10 17:57:22,018] ERROR log_exception() L1449 Exception on /amostra [POST] - call_trace=c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+  File "c:\users\wvpin\desktop\wanderson\puc eng software\sprintiv_qualidade_seg_sistinteligentes\mvp\entrega mvp\wanderson_mvplast\api\env\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\wvpin\Desktop\Wanderson\PUC Eng Software\SprintIV_Qualidade_Seg_SistInteligentes\MVP\Entrega MVP\wanderson_mvplast\api\app.py", line 87, in predict
+    Model.preditor(modelo, form)
+TypeError: preditor() missing 1 required positional argument: 'form'
